@@ -6,11 +6,11 @@ class Geography:
         self.geoYear = geoYear
     
     # Return the geographic ids
-    def getGeoIDs(self):
+    def get_geo_ids(self):
         return self.geoIDs
     
     # Print the values of the object
-    def printValues(self):
+    def print_values(self):
         print("GeoIDs: ", self.geoIDs)
         print("GeoLevel: ", self.geoLevel)
         print("GeoYear: ", self.geoYear)
@@ -23,11 +23,11 @@ class Variables:
         self.varYear = varYear
     
     # Return the variable ids
-    def getVarIDs(self):
+    def get_var_ids(self):
         return self.varID
     
     # Print the values of the object
-    def printValues(self):
+    def print_values(self):
         print("VarIDs: ", self.varID)
         print("VarYear: ", self.varYear)
 
@@ -40,20 +40,20 @@ class ACS:
         self.acsYear = acsYear
     
     # Set the geographic area
-    def setGeo(self, geo):
+    def set_geography(self, geo):
         self.geo = geo
     
     # Set the variables
-    def setVar(self, var):
+    def set_variables(self, var):
         self.var = var
     
     # Set the year
-    def setYear(self, acsYear):
+    def set_year(self, acsYear):
         self.acsYear = acsYear
     
     # Print the values of the object
-    def printValues(self):
+    def print_values(self):
         print("ACS Year: ", self.acsYear)
-        self.geo.printValues()
-        self.var.printValues()
+        self.geo.print_values()
+        self.var.print_values()
 
